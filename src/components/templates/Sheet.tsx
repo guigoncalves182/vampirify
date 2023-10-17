@@ -3,6 +3,7 @@ import Header from "../organisms/Header";
 import Attributes from "../organisms/Attributes";
 import Abilities from "../organisms/Abilities";
 import { mockSheet } from "@/mocks/sheet.mock";
+import Advantages from "../organisms/Advantages";
 
 export default function Sheet() {
   return (
@@ -18,7 +19,7 @@ export default function Sheet() {
       <Header header={mockSheet.header} />
       <Attributes attributes={mockSheet.attributes} />
       <Abilities abilities={mockSheet.abilities} />
-      
+      <Advantages />
     </main>
   );
 }

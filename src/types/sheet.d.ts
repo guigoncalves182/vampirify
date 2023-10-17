@@ -96,8 +96,31 @@ export interface IAbilities {
   knowledge: IKnowledge;
 }
 
+export interface IBackgrounds {
+  description: string;
+  value: number;
+}
+
+export interface IDisciplines {
+  description: string;
+  value: number;
+}
+
+export interface IVirtues {
+  conscienceConviction: number;
+  selfControlInstinct: number;
+  Courage: number;
+}
+
+export interface IAdvantages {
+  backgrounds: IBackgrounds[];
+  disciplines: IDisciplines[];
+  virtues: IVirtues;
+}
+
 export interface ISheet {
   header: IHeader;
   attributes: IAttributes;
   abilities: IAbilities;
+  advantages: IAdvantages;
 }
