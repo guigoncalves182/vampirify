@@ -3,7 +3,7 @@ import { IMental } from "@/types/sheet";
 import React from "react";
 
 interface MentalProps {
-  mental?: IMental;
+  mental: IMental;
 }
 
 export function Mental({ mental }: MentalProps) {
@@ -12,16 +12,13 @@ export function Mental({ mental }: MentalProps) {
       <ul>
         <div className="w-full text-center rounded  text-xl">Mentais</div>
         <li>
-          <Status description="Percepcção" value={mental?.perception || 1} />
+          <Status description="Percepcção" value={mental.perception} />
         </li>
         <li>
-          <Status
-            description="Inteligência"
-            value={mental?.intelligence || 1}
-          />
+          <Status description="Inteligência" value={mental.intelligence} />
         </li>
         <li>
-          <Status description="Raciocínio" value={mental?.wits || 1} />
+          <Status description="Raciocínio" value={mental.wits} />
         </li>
       </ul>
     </>
