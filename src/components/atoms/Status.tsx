@@ -19,7 +19,9 @@ export default function Status({ description, value }: IStatus) {
 
   return (
     <div className="flex flex-wrap">
-      <div className="w-full flex-1 grow-0">{description}</div>
+      <div className="w-full flex-1 grow-0 whitespace-nowrap">
+        {description}
+      </div>
       <div className="w-full border-b border-black flex-1 grow"></div>
       <div className="w-full flex-1 grow-0">{generatePattern(value)}</div>
     </div>
