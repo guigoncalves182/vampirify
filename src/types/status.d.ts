@@ -1,4 +1,5 @@
 export interface IStatus {
   description?: string;
-  value: number;
+  value?: number;
+  hiddenValues?: boolean;
 }
