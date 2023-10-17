@@ -1,41 +1,19 @@
-import { IAttributes } from "@/types/sheet";
+import { IAdvantages } from "@/types/sheet";
 import DynamicColums from "../molecules/DinamicColums";
 import Title from "../molecules/Title";
-import Status from "../atoms/Status";
+
+import { Backgrounds } from "../molecules/advantages/Backgrounds";
+import { Disciplines } from "../molecules/advantages/Disciplines";
+import { Virtues } from "../molecules/advantages/Virtues";
 
 interface AdvantagesProps {
-  advantages?: IAttributes;
+  advantages: IAdvantages;
 }
 
 export default function Advantages({ advantages }: AdvantagesProps) {
-  const backgrounds = (
-    <ul>
-      <div className="w-full text-center rounded  text-xl">Antecedentes</div>
-      <li>
-        <Status value={0} />
-      </li>
-      <li>
-        <Status value={0} />
-      </li>
-      <li>
-        <Status value={0} />
-      </li>
-      <li>
-        <Status value={0} />
-      </li>
-      <li>
-        <Status value={0} />
-      </li>
-      <li>
-        <Status value={0} />
-      </li>
-      <li>
-        <Status value={0} />
-      </li>
-    </ul>
-  );
-  const disciplines = <>Disciplinas</>;
-  const virtues = <>Virtudes</>;
+  const backgrounds = <Backgrounds backgrounds={advantages.backgrounds} />;
+  const disciplines = <Disciplines disciplines={advantages.disciplines} />;
+  const virtues = <Virtues virtues={advantages.virtues} />;
 
   return (
     <>

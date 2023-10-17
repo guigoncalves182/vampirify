@@ -19,7 +19,7 @@ export default function Sheet() {
       <Header header={mockSheet.header} />
       <Attributes attributes={mockSheet.attributes} />
       <Abilities abilities={mockSheet.abilities} />
-      <Advantages />
+      <Advantages advantages={mockSheet.advantages}/>
     </main>
   );
 }

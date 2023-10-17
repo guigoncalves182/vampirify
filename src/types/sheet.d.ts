@@ -97,19 +97,43 @@ export interface IAbilities {
 }
 
 export interface IBackgrounds {
-  description: string;
+  description:
+    | "Allies"
+    | "Contacts"
+    | "Fame"
+    | "Influence"
+    | "Mentor"
+    | "Resources"
+    | "Status";
   value: number;
 }
 
 export interface IDisciplines {
-  description: string;
+  description:
+    | "Celerity"
+    | "Obfuscate"
+    | "Quietus"
+    | "Potence"
+    | "Presence"
+    | "Animalism"
+    | "Fortitude"
+    | "Protean"
+    | "Serpenti"
+    | "Dominate"
+    | "Necromancy"
+    | "Obtenebration"
+    | "Auspex"
+    | "Dementation"
+    | "Chimerstry"
+    | "Thaumaturgy"
+    | "Vicissitude";
   value: number;
 }
 
 export interface IVirtues {
   conscienceConviction: number;
   selfControlInstinct: number;
-  Courage: number;
+  courage: number;
 }
 
 export interface IAdvantages {
