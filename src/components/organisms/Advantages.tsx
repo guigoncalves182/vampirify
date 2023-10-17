@@ -10,7 +10,7 @@ interface AdvantagesProps {
 export default function Advantages({ advantages }: AdvantagesProps) {
   const backgrounds = (
     <ul>
-      <div className="w-full text-center rounded  text-xl">Vantagens</div>
+      <div className="w-full text-center rounded  text-xl">Antecedentes</div>
       <li>
         <Status value={0} />
       </li>
@@ -34,8 +34,8 @@ export default function Advantages({ advantages }: AdvantagesProps) {
       </li>
     </ul>
   );
-  const disciplines = <>disciplines</>;
-  const virtues = <>virtues</>;
+  const disciplines = <>Disciplinas</>;
+  const virtues = <>Virtudes</>;
 
   return (
     <>
